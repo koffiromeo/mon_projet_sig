@@ -1,4 +1,6 @@
+// ==============================
 // Afficher ou cacher les sections principales
+// ==============================
 function afficher(id) {
     const div = document.getElementById(id);
 
@@ -18,7 +20,9 @@ function afficher(id) {
     }
 }
 
+// ==============================
 // Afficher ou cacher les modules de formation
+// ==============================
 function afficherModule(id) {
     const module = document.getElementById(id);
     const header = module.previousElementSibling;
@@ -26,7 +30,7 @@ function afficherModule(id) {
 
     // Fermer tous les autres modules
     const tousModules = document.querySelectorAll('.module-contenu');
-    const toutesfleches = document.querySelectorAll('.fleche');
+    const toutesFleches = document.querySelectorAll('.fleche');
 
     tousModules.forEach(function(m) {
         if (m.id !== id) {
@@ -34,7 +38,7 @@ function afficherModule(id) {
         }
     });
 
-    toutesfleches.forEach(function(f) {
+    toutesFleches.forEach(function(f) {
         if (f !== fleche) {
             f.style.transform = "rotate(0deg)";
         }

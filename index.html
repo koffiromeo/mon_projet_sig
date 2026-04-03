@@ -13,36 +13,36 @@
     <!-- ========= HEADER ========= -->
     <header>
         <div class="header-contenu">
-            <img class="logo" src="logo.png" alt="Logo GEO-INFORMATION">
+            <img class="logo" src="image/logo.png" alt="Logo GEO-INFORMATION">
             <div class="header-texte">
                 <h1>GEO-INFORMATION</h1>
-                <p>Experts en géomatique et développement WebSIG</p>
+                <p>Cabinet d’expertise en géomatique, cartographie, télédétection et développement WebSIG</p>
             </div>
         </div>
     </header>
 
     <!-- ========= IMAGE DE COUVERTURE ========= -->
     <div class="image-couverture">
-        <img src="couverture.png" alt="Image de couverture">
+        <img src="image/couverture.png" alt="Image de couverture">
         <div class="couverture-texte">
             <h2>BIENVENUE À GEO-INFORMATION</h2>
-            <p>Votre partenaire en solutions géospatiales</p>
+            <p>Votre partenaire en solutions géospatiales professionnelles</p>
         </div>
     </div>
 
     <!-- ========= NAVIGATION ========= -->
     <nav>
         <button class="nav-btn" onclick="afficher('services')">
-            <i class="fas fa-map-marked-alt"></i> NOS SERVICES
+            <i class="fas fa-briefcase"></i> NOS SERVICES
         </button>
         <button class="nav-btn" onclick="afficher('realisations')">
             <i class="fas fa-project-diagram"></i> NOS RÉALISATIONS
         </button>
-        <button class="nav-btn" onclick="afficher('formations')">
-            <i class="fas fa-graduation-cap"></i> NOS FORMATIONS
+        <button class="nav-btn" onclick="afficher('expertise')">
+            <i class="fas fa-layer-group"></i> SOLUTIONS & EXPERTISE
         </button>
         <button class="nav-btn" onclick="afficher('formateurs')">
-            <i class="fas fa-users"></i> NOS FORMATEURS
+            <i class="fas fa-users"></i> NOS MEMBRES
         </button>
     </nav>
 
@@ -50,222 +50,315 @@
     <main>
 
         <!-- NOS SERVICES -->
-        <div id="services" class="contenu">
-            <h3><i class="fas fa-map-marked-alt"></i> NOS SERVICES</h3>
+        <section id="services" class="contenu">
+            <h3><i class="fas fa-briefcase"></i> NOS SERVICES</h3>
             <div class="grille">
                 <div class="carte">
                     <i class="fas fa-map"></i>
-                    <h4>Cartographie</h4>
-                    <p>Production de cartes thématiques et topographiques de haute qualité.</p>
+                    <h4>Cartographie professionnelle</h4>
+                    <p>Production de cartes thématiques, techniques et décisionnelles pour l’aménagement, l’environnement, l’agriculture et le suivi territorial.</p>
                 </div>
+
                 <div class="carte">
-                    <i class="fas fa-database"></i>
-                    <h4>Base de données SIG</h4>
-                    <p>Conception et gestion de bases de données géospatiales.</p>
+                    <i class="fas fa-satellite"></i>
+                    <h4>Télédétection</h4>
+                    <p>Traitement et interprétation d’images satellites pour l’analyse de l’occupation du sol, du couvert végétal, de la déforestation et des dynamiques territoriales.</p>
                 </div>
+
                 <div class="carte">
                     <i class="fas fa-globe"></i>
                     <h4>Développement WebSIG</h4>
-                    <p>Création d'applications cartographiques interactives en ligne.</p>
+                    <p>Conception de plateformes cartographiques interactives, de tableaux de bord dynamiques et d’outils de visualisation géospatiale en ligne.</p>
                 </div>
+
+                <div class="carte">
+                    <i class="fas fa-database"></i>
+                    <h4>Gestion de données spatiales</h4>
+                    <p>Structuration, intégration et gestion de bases de données géographiques pour garantir la qualité, la fiabilité et la centralisation de l’information.</p>
+                </div>
+
                 <div class="carte">
                     <i class="fas fa-chart-bar"></i>
                     <h4>Analyse spatiale</h4>
-                    <p>Analyse et interprétation de données géographiques.</p>
+                    <p>Études multicritères, modélisation spatiale, cartographie des risques et aide à la décision pour les projets publics et privés.</p>
                 </div>
+
+                <div class="carte">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Collecte terrain & SIG mobile</h4>
+                    <p>Mise en place de solutions de collecte mobile, formulaires géolocalisés et dispositifs de suivi terrain en temps réel.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOS RÉALISATIONS -->
+        <!-- NOS RÉALISATIONS -->
+<section id="realisations" class="contenu">
+    <h3><i class="fas fa-project-diagram"></i> NOS RÉALISATIONS</h3>
+    <p class="intro-formation">
+        Découvrez quelques-uns de nos projets réalisés dans les domaines de la cartographie,
+        de la télédétection, du WebSIG, de l’analyse spatiale et du suivi territorial.
+    </p>
+
+    <div class="grille-realisations">
+
+        <!-- PROJET 1 -->
+        <div class="carte-realisation">
+            <img src="image/projet1.jpg" alt="Projet de cartographie thématique">
+            <div class="realisation-contenu">
+                <h4>Cartographie thématique</h4>
+                <p>
+                    Réalisation de cartes thématiques pour l’analyse territoriale,
+                    l’aménagement et l’aide à la décision.
+                </p>
+                <a href="#" class="btn-realisation">Voir le projet</a>
             </div>
         </div>
 
-        <!-- NOS RÉALISATIONS -->
-        <div id="realisations" class="contenu">
-            <h3><i class="fas fa-project-diagram"></i> NOS RÉALISATIONS</h3>
-            <ul class="liste-realisations">
-                <li><i class="fas fa-check-circle"></i> Cartographie thématique</li>
-                <li><i class="fas fa-check-circle"></i> Mise en place d'un WebSIG</li>
-                <li><i class="fas fa-check-circle"></i> Rédaction de rapport de terrain</li>
-                <li><i class="fas fa-check-circle"></i> Mise en place d'un système d'alerte précoce</li>
-                <li><i class="fas fa-check-circle"></i> Mise en place d'une mission de terrain en temps réel</li>
-            </ul>
+        <!-- PROJET 2 -->
+        <div class="carte-realisation">
+            <img src="image/projet2.jpg" alt="Projet WebSIG interactif">
+            <div class="realisation-contenu">
+                <h4>Mise en place d’un WebSIG</h4>
+                <p>
+                    Développement d’une plateforme cartographique interactive
+                    pour la consultation et la visualisation des données spatiales.
+                </p>
+                <a href="#" class="btn-realisation">Voir le projet</a>
+            </div>
         </div>
 
-        <!-- NOS FORMATIONS -->
-        <div id="formations" class="contenu">
-            <h3><i class="fas fa-graduation-cap"></i> NOS FORMATIONS</h3>
-            <p class="intro-formation">Nos formations couvrent les domaines de la géomatique et de la géographie. Chaque module est dispensé par des experts certifiés.</p>
+        <!-- PROJET 3 -->
+        <div class="carte-realisation">
+            <img src="image/projet3.jpg" alt="Projet de suivi environnemental">
+            <div class="realisation-contenu">
+                <h4>Suivi environnemental</h4>
+                <p>
+                    Analyse spatiale et télédétection pour le suivi de l’occupation du sol,
+                    de la déforestation et des dynamiques environnementales.
+                </p>
+                <a href="#" class="btn-realisation">Voir le projet</a>
+            </div>
+        </div>
 
-            <!-- MODULE 1 -->
+        <!-- PROJET 4 -->
+        <div class="carte-realisation">
+            <img src="image/projet4.jpg" alt="Projet de collecte de données terrain">
+            <div class="realisation-contenu">
+                <h4>Collecte terrain géolocalisée</h4>
+                <p>
+                    Mise en place d’un dispositif de collecte mobile pour le suivi
+                    des parcelles, infrastructures et missions de terrain.
+                </p>
+                <a href="#" class="btn-realisation">Voir le projet</a>
+            </div>
+        </div>
+
+        <!-- PROJET 5 -->
+        <div class="carte-realisation">
+            <img src="image/projet5.jpg" alt="Projet d'analyse spatiale">
+            <div class="realisation-contenu">
+                <h4>Analyse spatiale multicritère</h4>
+                <p>
+                    Élaboration de cartes de potentiel, de vulnérabilité et
+                    d’aptitude pour l’aide à la décision.
+                </p>
+                <a href="#" class="btn-realisation">Voir le projet</a>
+            </div>
+        </div>
+
+        <!-- PROJET 6 -->
+        <div class="carte-realisation">
+            <img src="image/projet6.jpg" alt="Projet d'étude territoriale">
+            <div class="realisation-contenu">
+                <h4>Étude territoriale et diagnostic spatial</h4>
+                <p>
+                    Production d’analyses et de supports cartographiques
+                    pour les projets institutionnels, environnementaux et de développement.
+                </p>
+                <a href="#" class="btn-realisation">Voir le projet</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- SOLUTIONS & EXPERTISE -->
+        <section id="expertise" class="contenu">
+            <h3><i class="fas fa-layer-group"></i> SOLUTIONS, SERVICES & EXPERTISE</h3>
+            <p class="intro-formation">
+                GEO-INFORMATION accompagne les entreprises, ONG, collectivités, institutions et porteurs de projets
+                dans la conception de solutions géospatiales adaptées aux enjeux opérationnels, environnementaux,
+                territoriaux et décisionnels.
+            </p>
+
+            <!-- BLOC 1 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module1')">
-                    <i class="fas fa-map"></i>
-                    <span>MODULE 1 — Cartographie et SIG de base</span>
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>SOLUTIONS DE CARTOGRAPHIE & D’AIDE À LA DÉCISION</span>
                     <i class="fas fa-chevron-down fleche"></i>
                 </div>
                 <div id="module1" class="module-contenu">
                     <ul>
-                        <li><i class="fas fa-dot-circle"></i> Introduction aux Systèmes d'Information Géographique (SIG)</li>
-                        <li><i class="fas fa-dot-circle"></i> Prise en main de QGIS et ArcGIS</li>
-                        <li><i class="fas fa-dot-circle"></i> Création et gestion de couches vectorielles</li>
-                        <li><i class="fas fa-dot-circle"></i> Symbologie et mise en page cartographique</li>
-                        <li><i class="fas fa-dot-circle"></i> Projections et systèmes de coordonnées</li>
-                        <li><i class="fas fa-dot-circle"></i> Production et impression de cartes</li>
+                        <li><i class="fas fa-dot-circle"></i> Cartographie thématique, analytique et opérationnelle</li>
+                        <li><i class="fas fa-dot-circle"></i> Cartographie de l’occupation du sol et de l’utilisation des terres</li>
+                        <li><i class="fas fa-dot-circle"></i> Cartographie des risques : inondation, érosion, déforestation</li>
+                        <li><i class="fas fa-dot-circle"></i> Analyse multicritère pour l’aide à la décision</li>
+                        <li><i class="fas fa-dot-circle"></i> Production de cartes pour rapports, projets et présentations institutionnelles</li>
+                        <li><i class="fas fa-dot-circle"></i> Appui à la planification territoriale et environnementale</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- MODULE 2 -->
+            <!-- BLOC 2 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module2')">
                     <i class="fas fa-satellite"></i>
-                    <span>MODULE 2 — Télédétection et imagerie satellitaire</span>
+                    <span>SERVICES DE TÉLÉDÉTECTION & IMAGERIE SATELLITAIRE</span>
                     <i class="fas fa-chevron-down fleche"></i>
                 </div>
                 <div id="module2" class="module-contenu">
                     <ul>
-                        <li><i class="fas fa-dot-circle"></i> Introduction à la télédétection</li>
-                        <li><i class="fas fa-dot-circle"></i> Types d'images satellitaires (Sentinel, Landsat, SPOT)</li>
-                        <li><i class="fas fa-dot-circle"></i> Traitement et correction des images</li>
-                        <li><i class="fas fa-dot-circle"></i> Classification supervisée et non supervisée</li>
-                        <li><i class="fas fa-dot-circle"></i> Indices de végétation (NDVI, NDWI)</li>
-                        <li><i class="fas fa-dot-circle"></i> Application avec Google Earth Engine</li>
+                        <li><i class="fas fa-dot-circle"></i> Traitement d’images Sentinel, Landsat, Planet et autres sources</li>
+                        <li><i class="fas fa-dot-circle"></i> Analyse diachronique et suivi des changements dans le temps</li>
+                        <li><i class="fas fa-dot-circle"></i> Calcul d’indices spectraux : NDVI, NDWI, NDBI et autres</li>
+                        <li><i class="fas fa-dot-circle"></i> Classification supervisée et extraction d’information spatiale</li>
+                        <li><i class="fas fa-dot-circle"></i> Suivi du couvert végétal, de l’agriculture et des zones urbanisées</li>
+                        <li><i class="fas fa-dot-circle"></i> Diagnostic spatial pour projets environnementaux et climatiques</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- MODULE 3 -->
+            <!-- BLOC 3 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module3')">
-                    <i class="fas fa-globe"></i>
-                    <span>MODULE 3 — Développement WebSIG</span>
+                    <i class="fas fa-globe-africa"></i>
+                    <span>EXPERTISE EN DÉVELOPPEMENT WEBSIG & TABLEAUX DE BORD</span>
                     <i class="fas fa-chevron-down fleche"></i>
                 </div>
                 <div id="module3" class="module-contenu">
                     <ul>
-                        <li><i class="fas fa-dot-circle"></i> Introduction au WebSIG</li>
-                        <li><i class="fas fa-dot-circle"></i> HTML, CSS et JavaScript pour le SIG</li>
-                        <li><i class="fas fa-dot-circle"></i> Leaflet.js — cartes interactives en ligne</li>
-                        <li><i class="fas fa-dot-circle"></i> OpenLayers — cartographie avancée</li>
-                        <li><i class="fas fa-dot-circle"></i> GeoServer — publication de données géographiques</li>
-                        <li><i class="fas fa-dot-circle"></i> Déploiement d'une application WebSIG</li>
+                        <li><i class="fas fa-dot-circle"></i> Création d’applications cartographiques interactives</li>
+                        <li><i class="fas fa-dot-circle"></i> Déploiement de plateformes WebSIG pour la visualisation en ligne</li>
+                        <li><i class="fas fa-dot-circle"></i> Intégration de tableaux de bord pour le suivi des indicateurs</li>
+                        <li><i class="fas fa-dot-circle"></i> Suivi spatial en temps réel pour projets et missions terrain</li>
+                        <li><i class="fas fa-dot-circle"></i> Développement de solutions adaptées aux besoins métiers</li>
+                        <li><i class="fas fa-dot-circle"></i> Valorisation des données géographiques pour la prise de décision</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- MODULE 4 -->
+            <!-- BLOC 4 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module4')">
                     <i class="fas fa-database"></i>
-                    <span>MODULE 4 — Base de données spatiales</span>
+                    <span>SERVICES DE GESTION & STRUCTURATION DES DONNÉES SPATIALES</span>
                     <i class="fas fa-chevron-down fleche"></i>
                 </div>
                 <div id="module4" class="module-contenu">
                     <ul>
-                        <li><i class="fas fa-dot-circle"></i> Introduction aux bases de données</li>
-                        <li><i class="fas fa-dot-circle"></i> PostgreSQL et PostGIS</li>
-                        <li><i class="fas fa-dot-circle"></i> Requêtes SQL spatiales</li>
-                        <li><i class="fas fa-dot-circle"></i> Gestion et stockage de données géographiques</li>
-                        <li><i class="fas fa-dot-circle"></i> Connexion QGIS / PostGIS</li>
-                        <li><i class="fas fa-dot-circle"></i> Optimisation des performances spatiales</li>
+                        <li><i class="fas fa-dot-circle"></i> Conception de bases de données géographiques</li>
+                        <li><i class="fas fa-dot-circle"></i> Structuration et sécurisation de l’information spatiale</li>
+                        <li><i class="fas fa-dot-circle"></i> Intégration de données multi-sources</li>
+                        <li><i class="fas fa-dot-circle"></i> Organisation des flux de données pour projets SIG</li>
+                        <li><i class="fas fa-dot-circle"></i> Gestion de référentiels géographiques et administratifs</li>
+                        <li><i class="fas fa-dot-circle"></i> Appui à la centralisation des données institutionnelles</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- MODULE 5 -->
+            <!-- BLOC 5 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module5')">
-                    <i class="fas fa-drafting-compass"></i>
-                    <span>MODULE 5 — Topographie et GPS</span>
+                    <i class="fas fa-map-pin"></i>
+                    <span>SOLUTIONS DE COLLECTE TERRAIN, GPS & SIG MOBILE</span>
                     <i class="fas fa-chevron-down fleche"></i>
                 </div>
                 <div id="module5" class="module-contenu">
                     <ul>
-                        <li><i class="fas fa-dot-circle"></i> Notions de base en topographie</li>
-                        <li><i class="fas fa-dot-circle"></i> Utilisation du GPS et GNSS</li>
-                        <li><i class="fas fa-dot-circle"></i> Collecte de données terrain avec ODK / KoboToolbox</li>
-                        <li><i class="fas fa-dot-circle"></i> Traitement des données GPS dans QGIS</li>
-                        <li><i class="fas fa-dot-circle"></i> Création de modèles numériques de terrain (MNT)</li>
-                        <li><i class="fas fa-dot-circle"></i> Analyse du relief et des pentes</li>
+                        <li><i class="fas fa-dot-circle"></i> Conception de formulaires de collecte mobile</li>
+                        <li><i class="fas fa-dot-circle"></i> Enquêtes terrain géolocalisées</li>
+                        <li><i class="fas fa-dot-circle"></i> Suivi de parcelles, infrastructures et équipements</li>
+                        <li><i class="fas fa-dot-circle"></i> Intégration GPS, GNSS et collecte en temps réel</li>
+                        <li><i class="fas fa-dot-circle"></i> Contrôle qualité et synchronisation des données terrain</li>
+                        <li><i class="fas fa-dot-circle"></i> Dispositifs de suivi opérationnel pour projets de terrain</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- MODULE 6 -->
+            <!-- BLOC 6 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module6')">
                     <i class="fas fa-earth-africa"></i>
-                    <span>MODULE 6 — Géographie et environnement</span>
+                    <span>EXPERTISE ENVIRONNEMENTALE, TERRITORIALE & CLIMATIQUE</span>
                     <i class="fas fa-chevron-down fleche"></i>
                 </div>
                 <div id="module6" class="module-contenu">
                     <ul>
-                        <li><i class="fas fa-dot-circle"></i> Géographie physique et humaine</li>
-                        <li><i class="fas fa-dot-circle"></i> Climatologie et météorologie</li>
-                        <li><i class="fas fa-dot-circle"></i> Gestion des ressources naturelles</li>
-                        <li><i class="fas fa-dot-circle"></i> Cartographie environnementale</li>
-                        <li><i class="fas fa-dot-circle"></i> Changement climatique et SIG</li>
-                        <li><i class="fas fa-dot-circle"></i> Aménagement du territoire</li>
+                        <li><i class="fas fa-dot-circle"></i> Études environnementales et territoriales</li>
+                        <li><i class="fas fa-dot-circle"></i> Suivi des dynamiques d’occupation du sol</li>
+                        <li><i class="fas fa-dot-circle"></i> Appui aux projets de résilience climatique et de durabilité</li>
+                        <li><i class="fas fa-dot-circle"></i> Analyse des pressions sur les ressources naturelles</li>
+                        <li><i class="fas fa-dot-circle"></i> Cartographie des vulnérabilités et des enjeux territoriaux</li>
+                        <li><i class="fas fa-dot-circle"></i> Accompagnement technique pour études, projets et programmes</li>
                     </ul>
                 </div>
             </div>
+        </section>
 
-        </div>
-
-        <!-- NOS FORMATEURS -->
-        <div id="formateurs" class="contenu">
-            <h3><i class="fas fa-users"></i> NOS FORMATEURS</h3>
+        <!-- NOS MEMBRES -->
+        <section id="formateurs" class="contenu">
+            <h3><i class="fas fa-users"></i> NOS MEMBRES GEO-INFORMATION</h3>
             <div class="grille-formateurs">
 
-                <!-- FORMATEUR 1 -->
                 <div class="carte-formateur">
-                    <a href="romeo zoom.jpeg">
-                        <img class="image-formateur" src="romeo.jpeg" alt="KOUAME KOFFI ROMEO" title="KOUAME KOFFI ROMEO">
+                    <a href="image/romeo.jpeg" target="_blank">
+                        <img class="image-formateur" src="image/romeo.jpeg" alt="KOUAME KOFFI ROMEO" title="KOUAME KOFFI ROMEO">
                     </a>
                     <h4>KOUAME KOFFI ROMEO</h4>
-                    <p>Géographe cartographe <br>Ingénieur géomaticien et développeur WebSIG</p>
-                    <div class="reseaux">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </div>
+                    <p>Géographe cartographe <br> Ingénieur géomaticien et développeur WebSIG</p>
+                    
                 </div>
 
-                <!-- FORMATEUR 2 -->
                 <div class="carte-formateur">
-                    <img class="image-formateur" src="tanjunior.jpeg" alt="TAN JUNIOR" title="TAN JUNIOR">
+                    <a href="image/tanjunior.jpeg" target="_blank">
+                        <img class="image-formateur" src="image/tanjunior.jpeg" alt="TAN JUNIOR" title="TAN JUNIOR">
+                    </a>
                     <h4>TAN JUNIOR</h4>
-                    <p>Géologue <br>Ingénieur géomaticien et développeur WebSIG</p>
-                    <div class="reseaux">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </div>
+                    <p>Géologue <br> Ingénieur géomaticien et développeur WebSIG</p>
+                    
                 </div>
 
-                <!-- FORMATEUR 3 -->
                 <div class="carte-formateur">
-                    <img class="image-formateur" src="atimanjoseph.jpeg" alt="ATIMAN JOSEPH" title="ATIMAN JOSEPH">
+                    <a href="image/atimanjoseph.jpeg" target="_blank">
+                        <img class="image-formateur" src="image/atimanjoseph.jpeg" alt="ATIMAN JOSEPH" title="ATIMAN JOSEPH">
+                    </a>
                     <h4>ATIMAN JOSEPH</h4>
-                    <p>Géomètre <br>Ingénieur géomaticien et développeur WebSIG</p>
-                    <div class="reseaux">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </div>
+                    <p>Géomètre <br> Ingénieur géomaticien et développeur WebSIG</p>
+                    
                 </div>
 
-                <!-- FORMATEUR 4 -->
                 <div class="carte-formateur">
-                    <img class="image-formateur" src="tuoibrahim.jpeg" alt="TUO IBRAHIM" title="TUO IBRAHIM">
+                    <a href="image/tuoibrahim.jpeg" target="_blank">
+                        <img class="image-formateur" src="image/tuoibrahim.jpeg" alt="TUO IBRAHIM" title="TUO IBRAHIM">
+                    </a>
                     <h4>TUO IBRAHIM</h4>
-                    <p>Géologue <br> Ingénieur géomaticien et développeur WebSIGt</p>
-                    <div class="reseaux">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </div>
+                    <p>Géologue <br> Ingénieur géomaticien</p>
+                    
+                </div>
+
+                <div class="carte-formateur">
+                    <a href="image/monpeo.jpeg" target="_blank">
+                        <img class="image-formateur" src="image/monpeo.jpeg" alt="MONPEO" title="MONPEO">
+                    </a>
+                    <h4>MONPEO MAXIME</h4>
+                    <p>Géographe <br> Ingénieur géomaticien</p>
+                    
                 </div>
 
             </div>
-        </div>
+        </section>
 
     </main>
 
@@ -277,13 +370,27 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <p>Abidjan, Côte d'Ivoire</p>
             </div>
+
             <div class="contact-item">
                 <i class="fas fa-phone"></i>
-                <p>+225 05 06 35 07 91</p>
+                <p>
+                    <a href="tel:+2250799137998">+225 07 99 13 79 98</a><br>
+                    <a href="tel:+2250102017532">+225 01 02 01 75 32</a>
+                </p>
             </div>
+
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <p>contact@geo-information.ci</p>
+                <p>
+                    <a href="mailto:contact@geo-information.ci">contact@geo-information.ci</a>
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <p>
+                    <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn GEO-INFORMATION</a>
+                </p>
             </div>
         </div>
     </section>
@@ -292,16 +399,14 @@
     <footer>
         <p>&copy; 2026 GEO-INFORMATION. Tous droits réservés.</p>
         <div class="footer-reseaux">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/tonprofil" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:contact@geo-information.ci" title="Email"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
-
