@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEO-INFORMATION</title>
+    <title>GEO-VISION ANALITICS</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,9 +13,9 @@
     <!-- ========= HEADER ========= -->
     <header>
         <div class="header-contenu">
-            <img class="logo" src="image/logo.png" alt="Logo GEO-INFORMATION">
+            <img class="logo" src="image/logo.png" alt="Logo GEO-VISION ANALICS">
             <div class="header-texte">
-                <h1>GEO-INFORMATION</h1>
+                <h1>GEO-VISION ANALITICS</h1>
                 <p>Cabinet d’expertise en géomatique, cartographie, télédétection et développement WebSIG</p>
             </div>
         </div>
@@ -25,13 +25,19 @@
     <div class="image-couverture">
         <img src="image/couverture.png" alt="Image de couverture">
         <div class="couverture-texte">
-            <h2>BIENVENUE À GEO-INFORMATION</h2>
+            <h2>BIENVENUE À GEO-VISION ANALITICS</h2>
             <p>Votre partenaire en solutions géospatiales professionnelles</p>
         </div>
     </div>
 
     <!-- ========= NAVIGATION ========= -->
     <nav>
+        <button class="nav-btn" onclick="afficher('apropos')">
+            <i class="fas fa-info-circle"></i> À PROPOS
+        </button>
+        <button class="nav-btn" onclick="afficher('valeurs')">
+            <i class="fas fa-star"></i> NOS VALEURS
+        </button>
         <button class="nav-btn" onclick="afficher('services')">
             <i class="fas fa-briefcase"></i> NOS SERVICES
         </button>
@@ -48,6 +54,61 @@
 
     <!-- ========= SECTIONS DÉROULANTES ========= -->
     <main>
+
+        <!-- À PROPOS -->
+        <section id="apropos" class="contenu">
+            <h3><i class="fas fa-info-circle"></i> À PROPOS DE GEO-VISION ANALITICS</h3>
+            <p>
+                <strong>GEO-VISION ANALITICCS</strong> est un cabinet spécialisé en géomatique, télédétection,
+                analyse spatiale et développement de solutions WebSIG.
+            </p>
+            <p>
+                Nous accompagnons les institutions, entreprises, collectivités, ONG et porteurs de projets
+                dans la collecte, l’analyse, la gestion et la valorisation des données géospatiales pour
+                renforcer la prise de décision stratégique.
+            </p>
+            <p>
+                Grâce à l’intégration des technologies modernes telles que l’imagerie satellite,
+                les systèmes d’information géographique (SIG), les solutions mobiles de collecte terrain
+                et les outils d’analyse avancée, nous développons des solutions innovantes adaptées
+                aux réalités du terrain.
+            </p>
+            <p>
+                Notre expertise couvre les domaines de l’environnement, du climat, de l’agriculture,
+                de l’aménagement du territoire, de la gestion des risques, du suivi territorial
+                et de la planification spatiale.
+            </p>
+        </section>
+
+        <!-- NOS VALEURS -->
+        <section id="valeurs" class="contenu">
+            <h3><i class="fas fa-star"></i> NOS VALEURS</h3>
+            <div class="grille">
+                <div class="carte">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Précision</h4>
+                    <p>Nous produisons des analyses fiables, rigoureuses et basées sur des données de qualité.</p>
+                </div>
+
+                <div class="carte">
+                    <i class="fas fa-lightbulb"></i>
+                    <h4>Innovation</h4>
+                    <p>Nous mobilisons les technologies modernes pour proposer des solutions géospatiales performantes.</p>
+                </div>
+
+                <div class="carte">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Durabilité</h4>
+                    <p>Nous contribuons à une gestion responsable des territoires et au développement durable.</p>
+                </div>
+
+                <div class="carte">
+                    <i class="fas fa-handshake"></i>
+                    <h4>Engagement</h4>
+                    <p>Nous accompagnons nos partenaires avec professionnalisme, écoute et sens du résultat.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- NOS SERVICES -->
         <section id="services" class="contenu">
@@ -85,114 +146,106 @@
 
                 <div class="carte">
                     <i class="fas fa-mobile-alt"></i>
-                    <h4>Collecte terrain & SIG mobile</h4>
+                    <h4>Collecte terrain SIG mobile & GPS</h4>
                     <p>Mise en place de solutions de collecte mobile, formulaires géolocalisés et dispositifs de suivi terrain en temps réel.</p>
                 </div>
             </div>
         </section>
 
         <!-- NOS RÉALISATIONS -->
-        <!-- NOS RÉALISATIONS -->
-<section id="realisations" class="contenu">
-    <h3><i class="fas fa-project-diagram"></i> NOS RÉALISATIONS</h3>
-    <p class="intro-formation">
-        Découvrez quelques-uns de nos projets réalisés dans les domaines de la cartographie,
-        de la télédétection, du WebSIG, de l’analyse spatiale et du suivi territorial.
-    </p>
+        <section id="realisations" class="contenu">
+            <h3><i class="fas fa-project-diagram"></i> NOS RÉALISATIONS</h3>
+            <p class="intro-formation">
+                Découvrez quelques-uns de nos projets réalisés dans les domaines de la cartographie,
+                de la télédétection, du WebSIG, de l’analyse spatiale et du suivi territorial.
+            </p>
 
-    <div class="grille-realisations">
+            <div class="grille-realisations">
 
-        <!-- PROJET 1 -->
-        <div class="carte-realisation">
-            <img src="image/projet1.jpg" alt="Projet de cartographie thématique">
-            <div class="realisation-contenu">
-                <h4>Cartographie thématique</h4>
-                <p>
-                    Réalisation de cartes thématiques pour l’analyse territoriale,
-                    l’aménagement et l’aide à la décision.
-                </p>
-                <a href="#" class="btn-realisation">Voir le projet</a>
+                <div class="carte-realisation">
+                    <img src="image/projet1.jpg" alt="Projet de cartographie thématique">
+                    <div class="realisation-contenu">
+                        <h4>Cartographie thématique</h4>
+                        <p>
+                            Réalisation de cartes thématiques pour l’analyse territoriale,
+                            l’aménagement et l’aide à la décision.
+                        </p>
+                        <a href="#" class="btn-realisation">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="carte-realisation">
+                    <img src="image/projet2.jpg" alt="Projet WebSIG interactif">
+                    <div class="realisation-contenu">
+                        <h4>Mise en place d’un WebSIG</h4>
+                        <p>
+                            Développement d’une plateforme cartographique interactive
+                            pour la consultation et la visualisation des données spatiales.
+                        </p>
+                        <a href="#" class="btn-realisation">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="carte-realisation">
+                    <img src="image/projet3.jpg" alt="Projet de suivi environnemental">
+                    <div class="realisation-contenu">
+                        <h4>Suivi environnemental</h4>
+                        <p>
+                            Analyse spatiale et télédétection pour le suivi de l’occupation du sol,
+                            de la déforestation et des dynamiques environnementales.
+                        </p>
+                        <a href="#" class="btn-realisation">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="carte-realisation">
+                    <img src="image/projet4.jpg" alt="Projet de collecte de données terrain">
+                    <div class="realisation-contenu">
+                        <h4>Collecte terrain géolocalisée</h4>
+                        <p>
+                            Mise en place d’un dispositif de collecte mobile pour le suivi
+                            des parcelles, infrastructures et missions de terrain.
+                        </p>
+                        <a href="#" class="btn-realisation">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="carte-realisation">
+                    <img src="image/projet5.jpg" alt="Projet d'analyse spatiale">
+                    <div class="realisation-contenu">
+                        <h4>Analyse spatiale multicritère</h4>
+                        <p>
+                            Élaboration de cartes de potentiel, de vulnérabilité et
+                            d’aptitude pour l’aide à la décision.
+                        </p>
+                        <a href="#" class="btn-realisation">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="carte-realisation">
+                    <img src="image/projet6.jpg" alt="Projet d'étude territoriale">
+                    <div class="realisation-contenu">
+                        <h4>Étude territoriale et diagnostic spatial</h4>
+                        <p>
+                            Production d’analyses et de supports cartographiques
+                            pour les projets institutionnels, environnementaux et de développement.
+                        </p>
+                        <a href="#" class="btn-realisation">Voir le projet</a>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-        <!-- PROJET 2 -->
-        <div class="carte-realisation">
-            <img src="image/projet2.jpg" alt="Projet WebSIG interactif">
-            <div class="realisation-contenu">
-                <h4>Mise en place d’un WebSIG</h4>
-                <p>
-                    Développement d’une plateforme cartographique interactive
-                    pour la consultation et la visualisation des données spatiales.
-                </p>
-                <a href="#" class="btn-realisation">Voir le projet</a>
-            </div>
-        </div>
-
-        <!-- PROJET 3 -->
-        <div class="carte-realisation">
-            <img src="image/projet3.jpg" alt="Projet de suivi environnemental">
-            <div class="realisation-contenu">
-                <h4>Suivi environnemental</h4>
-                <p>
-                    Analyse spatiale et télédétection pour le suivi de l’occupation du sol,
-                    de la déforestation et des dynamiques environnementales.
-                </p>
-                <a href="#" class="btn-realisation">Voir le projet</a>
-            </div>
-        </div>
-
-        <!-- PROJET 4 -->
-        <div class="carte-realisation">
-            <img src="image/projet4.jpg" alt="Projet de collecte de données terrain">
-            <div class="realisation-contenu">
-                <h4>Collecte terrain géolocalisée</h4>
-                <p>
-                    Mise en place d’un dispositif de collecte mobile pour le suivi
-                    des parcelles, infrastructures et missions de terrain.
-                </p>
-                <a href="#" class="btn-realisation">Voir le projet</a>
-            </div>
-        </div>
-
-        <!-- PROJET 5 -->
-        <div class="carte-realisation">
-            <img src="image/projet5.jpg" alt="Projet d'analyse spatiale">
-            <div class="realisation-contenu">
-                <h4>Analyse spatiale multicritère</h4>
-                <p>
-                    Élaboration de cartes de potentiel, de vulnérabilité et
-                    d’aptitude pour l’aide à la décision.
-                </p>
-                <a href="#" class="btn-realisation">Voir le projet</a>
-            </div>
-        </div>
-
-        <!-- PROJET 6 -->
-        <div class="carte-realisation">
-            <img src="image/projet6.jpg" alt="Projet d'étude territoriale">
-            <div class="realisation-contenu">
-                <h4>Étude territoriale et diagnostic spatial</h4>
-                <p>
-                    Production d’analyses et de supports cartographiques
-                    pour les projets institutionnels, environnementaux et de développement.
-                </p>
-                <a href="#" class="btn-realisation">Voir le projet</a>
-            </div>
-        </div>
-
-    </div>
-</section>
+        </section>
 
         <!-- SOLUTIONS & EXPERTISE -->
         <section id="expertise" class="contenu">
             <h3><i class="fas fa-layer-group"></i> SOLUTIONS, SERVICES & EXPERTISE</h3>
             <p class="intro-formation">
-                GEO-INFORMATION accompagne les entreprises, ONG, collectivités, institutions et porteurs de projets
+                GEO-VISION ANALICS accompagne les entreprises, ONG, collectivités, institutions et porteurs de projets
                 dans la conception de solutions géospatiales adaptées aux enjeux opérationnels, environnementaux,
                 territoriaux et décisionnels.
             </p>
 
-            <!-- BLOC 1 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module1')">
                     <i class="fas fa-map-marked-alt"></i>
@@ -211,7 +264,6 @@
                 </div>
             </div>
 
-            <!-- BLOC 2 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module2')">
                     <i class="fas fa-satellite"></i>
@@ -230,7 +282,6 @@
                 </div>
             </div>
 
-            <!-- BLOC 3 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module3')">
                     <i class="fas fa-globe-africa"></i>
@@ -249,7 +300,6 @@
                 </div>
             </div>
 
-            <!-- BLOC 4 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module4')">
                     <i class="fas fa-database"></i>
@@ -268,7 +318,6 @@
                 </div>
             </div>
 
-            <!-- BLOC 5 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module5')">
                     <i class="fas fa-map-pin"></i>
@@ -287,7 +336,6 @@
                 </div>
             </div>
 
-            <!-- BLOC 6 -->
             <div class="module">
                 <div class="module-header" onclick="afficherModule('module6')">
                     <i class="fas fa-earth-africa"></i>
@@ -309,7 +357,7 @@
 
         <!-- NOS MEMBRES -->
         <section id="formateurs" class="contenu">
-            <h3><i class="fas fa-users"></i> NOS MEMBRES GEO-INFORMATION</h3>
+            <h3><i class="fas fa-users"></i> NOS MEMBRES GEO-VISION ANALITICS</h3>
             <div class="grille-formateurs">
 
                 <div class="carte-formateur">
@@ -318,43 +366,38 @@
                     </a>
                     <h4>KOUAME KOFFI ROMEO</h4>
                     <p>Géographe cartographe <br> Ingénieur géomaticien et développeur WebSIG</p>
-                    
                 </div>
 
                 <div class="carte-formateur">
-                    <a href="image/tanjunior.jpeg" target="_blank">
-                        <img class="image-formateur" src="image/tanjunior.jpeg" alt="TAN JUNIOR" title="TAN JUNIOR">
+                    <a href="image/tan_junior.jpeg" target="_blank">
+                        <img class="image-formateur" src="image/tan_junior.jpeg" alt="TAN JUNIOR" title="TAN JUNIOR">
                     </a>
                     <h4>TAN JUNIOR</h4>
                     <p>Géologue <br> Ingénieur géomaticien et développeur WebSIG</p>
-                    
                 </div>
 
                 <div class="carte-formateur">
-                    <a href="image/atimanjoseph.jpeg" target="_blank">
-                        <img class="image-formateur" src="image/atimanjoseph.jpeg" alt="ATIMAN JOSEPH" title="ATIMAN JOSEPH">
+                    <a href="image/joseph.jpeg" target="_blank">
+                        <img class="image-formateur" src="image/joseph.jpeg" alt="ATIMADJEGANGNI GERARD JOSEPH COFFIGNON" title="ATIMADJEGANGNI GERARD JOSEPH COFFIGNON">
                     </a>
-                    <h4>ATIMAN JOSEPH</h4>
+                    <h4>ATIMADJEGANGNI GERARD JOSEPH COFFIGNON</h4>
                     <p>Géomètre <br> Ingénieur géomaticien et développeur WebSIG</p>
-                    
                 </div>
 
                 <div class="carte-formateur">
-                    <a href="image/tuoibrahim.jpeg" target="_blank">
-                        <img class="image-formateur" src="image/tuoibrahim.jpeg" alt="TUO IBRAHIM" title="TUO IBRAHIM">
+                    <a href="image/tuo.jpeg" target="_blank">
+                        <img class="image-formateur" src="image/tuo.jpeg" alt="TUO IBRAHIM" title="TUO IBRAHIM">
                     </a>
                     <h4>TUO IBRAHIM</h4>
                     <p>Géologue <br> Ingénieur géomaticien</p>
-                    
                 </div>
 
                 <div class="carte-formateur">
                     <a href="image/monpeo.jpeg" target="_blank">
-                        <img class="image-formateur" src="image/monpeo.jpeg" alt="MONPEO" title="MONPEO">
+                        <img class="image-formateur" src="image/monpeo.jpeg" alt="MONPEO MAXIME" title="MONPEO MAXIME">
                     </a>
                     <h4>MONPEO MAXIME</h4>
                     <p>Géographe <br> Ingénieur géomaticien</p>
-                    
                 </div>
 
             </div>
@@ -382,14 +425,14 @@
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
                 <p>
-                    <a href="mailto:contact@geo-information.ci">contact@geo-information.ci</a>
+                    <a href="mailto:contact@geo-information.ci">contact@geo-visionanalitics</a>
                 </p>
             </div>
 
             <div class="contact-item">
                 <i class="fab fa-linkedin"></i>
                 <p>
-                    <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn GEO-INFORMATION</a>
+                    <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn GEO-VISION ANALITICS</a>
                 </p>
             </div>
         </div>
@@ -397,7 +440,7 @@
 
     <!-- ========= FOOTER ========= -->
     <footer>
-        <p>&copy; 2026 GEO-INFORMATION. Tous droits réservés.</p>
+        <p>; 2026 GEO-VISION ANALITICS. Tous droits réservés.</p>
         <div class="footer-reseaux">
             <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
             <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
